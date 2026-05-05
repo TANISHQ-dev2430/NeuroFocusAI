@@ -1,0 +1,153 @@
+.history-page {
+  min-height: 100svh;
+  background: #def4f6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px 14px;
+  color: #111;
+}
+
+.history-shell {
+  width: 100%;
+  max-width: 376px;
+  margin: 0 auto;
+  min-height: calc(100svh - 34px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.history-header {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.18s ease;
+}
+
+.back-button:hover {
+  opacity: 0.6;
+}
+
+.back-arrow-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.history-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.history-mark {
+  width: 29px;
+  height: 29px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.history-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 78px 0 18px;
+}
+
+.history-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.history-empty {
+  margin: 12px 0 0;
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(17, 17, 17, 0.66);
+}
+
+.history-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.history-card {
+  background: rgba(255, 253, 251, 0.82);
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-file {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.history-date {
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.history-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.history-metric {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.72);
+}
+
+.history-metric strong {
+  font-size: 18px;
+  color: #111;
+}
+
+@media (max-width: 390px) {
+  .history-title {
+    font-size: 26px;
+  }
+
+  .history-metrics {
+    grid-template-columns: 1fr;
+  }
+}
